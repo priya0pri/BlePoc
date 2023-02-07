@@ -13,7 +13,7 @@ const Stack = createNativeStackNavigator();
   const requestPermission = async () => {
     // alert("call")
     const granted=  await request(Platform.OS === 'ios' ? PERMISSIONS.IOS.BLUETOOTH_PERIPHERAL :  PERMISSIONS.ANDROID.BLUETOOTH_CONNECT).then((result) => {
-      // setPermissionResult(result)
+  
       console.log(result,"resultsgrant")
     });
     // console.log(PermissionsAndroid,"PermissionsAndroid");
